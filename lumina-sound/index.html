@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download Lumina Sound — Kronos Tech</title>
+  <meta name="title-en" content="Download Lumina Sound — Kronos Tech">
+  <meta name="title-es" content="Descargar Lumina Sound — Kronos Tech">
+  <meta name="description" content="Download Lumina Sound for macOS and Windows: a music and podcast player for your local library.">
+  <meta name="theme-color" content="#0a1018">
+  <meta property="og:title" content="Download Lumina Sound">
+  <meta property="og:description" content="Music and podcast player for your local library — macOS and Windows.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kronos1993.github.io/lumina-sound/">
+  <meta property="og:image" content="https://kronos1993.github.io/assets/lumina-sound-icon.png">
+  <link rel="icon" href="../assets/lumina-sound-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=block">
+  <link rel="stylesheet" href="../assets/styles.css?v=4">
+  <style>
+    .downloads { display: grid; gap: 24px; }
+    @media (min-width: 860px) { .downloads { grid-template-columns: 1fr 1fr; } }
+    .download { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: var(--radius-l); padding: 32px; }
+    .download h3 { display: flex; align-items: center; gap: 12px; font-size: 24px; }
+    .download h3 .material-symbols-rounded { font-size: 28px; color: var(--primary); }
+    .download .req { margin-top: 8px; color: var(--on-surface-variant); font-size: 15px; }
+    .download .product-actions { margin-top: 24px; }
+    .download ol { margin: 28px 0 0; padding-left: 20px; color: var(--on-surface-variant); }
+    .download li + li { margin-top: 8px; }
+    .download code { font-size: 13px; background: var(--surface-highest); padding: 2px 6px; border-radius: 6px; overflow-wrap: anywhere; }
+    .download .note { margin-top: 16px; font-size: 14px; color: var(--on-surface-variant); }
+    .premium { margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../" aria-label="Kronos Tech">
+        <img src="../assets/logo.png" alt="" width="36" height="36">
+        Kronos Tech
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="../#lumina-sound">Lumina Sound</a>
+        <a href="/lumina-sound-privacy/"><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a>
+      </nav>
+      <div class="segmented lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="block">
+      <div class="container">
+        <div class="section-head">
+          <span class="overline"><span data-lang="en">Desktop</span><span data-lang="es">Escritorio</span></span>
+          <h2><span data-lang="en">Download Lumina Sound</span><span data-lang="es">Descargar Lumina Sound</span></h2>
+          <p>
+            <span data-lang="en">The music and podcast player for the music you already own, now on macOS and Windows. Free to use, with an optional one-time Premium unlock.</span>
+            <span data-lang="es">El reproductor de música y podcasts para la música que ya tienes, ahora en macOS y Windows. Gratis, con un desbloqueo Premium opcional de pago único.</span>
+          </p>
+        </div>
+
+        <div class="downloads">
+          <article class="download" id="macos">
+            <h3><span class="material-symbols-rounded" aria-hidden="true">laptop_mac</span>macOS</h3>
+            <p class="req"><span data-lang="en">Apple Silicon (M1 or newer)</span><span data-lang="es">Apple Silicon (M1 o posterior)</span></p>
+            <div class="product-actions">
+              <a class="btn btn-lumina" href="https://github.com/Kronos1993/lumina-sound-releases/releases/latest/download/Lumina-Sound-macOS-arm64.zip">
+                <span class="material-symbols-rounded" aria-hidden="true">download</span>
+                <span data-lang="en">Download for macOS</span><span data-lang="es">Descargar para macOS</span>
+              </a>
+            </div>
+            <ol>
+              <li><span data-lang="en">Unzip the file and drag <strong>Lumina Sound</strong> into <strong>Applications</strong>.</span><span data-lang="es">Descomprime el archivo y arrastra <strong>Lumina Sound</strong> a <strong>Aplicaciones</strong>.</span></li>
+              <li><span data-lang="en">Open it. macOS will say it can't verify the developer — the app isn't notarized by Apple.</span><span data-lang="es">Ábrela. macOS dirá que no puede verificar al desarrollador: la app no está notarizada por Apple.</span></li>
+              <li><span data-lang="en">Go to <strong>System Settings → Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong>.</span><span data-lang="es">Ve a <strong>Ajustes del Sistema → Privacidad y seguridad</strong>, baja y pulsa <strong>Abrir igualmente</strong>.</span></li>
+            </ol>
+            <p class="note">
+              <span data-lang="en">No "Open Anyway" button? Run this once in Terminal:</span>
+              <span data-lang="es">¿No aparece "Abrir igualmente"? Ejecuta esto una vez en Terminal:</span>
+              <br><code>xattr -dr com.apple.quarantine "/Applications/Lumina Sound.app"</code>
+            </p>
+          </article>
+
+          <article class="download" id="windows">
+            <h3><span class="material-symbols-rounded" aria-hidden="true">desktop_windows</span>Windows</h3>
+            <p class="req"><span data-lang="en">Windows 10 (1809) or newer, 64-bit</span><span data-lang="es">Windows 10 (1809) o posterior, 64 bits</span></p>
+            <div class="product-actions">
+              <a class="btn btn-lumina" href="https://github.com/Kronos1993/lumina-sound-releases/releases/latest/download/Lumina-Sound-Windows-x64.msi">
+                <span class="material-symbols-rounded" aria-hidden="true">download</span>
+                <span data-lang="en">Download for Windows</span><span data-lang="es">Descargar para Windows</span>
+              </a>
+              <!-- Microsoft Store button goes here once the listing is live (Store ID 9NFCFKT1JL7F):
+                   https://apps.microsoft.com/detail/9NFCFKT1JL7F -->
+            </div>
+            <ol>
+              <li><span data-lang="en">Run the downloaded <code>.msi</code>.</span><span data-lang="es">Ejecuta el <code>.msi</code> descargado.</span></li>
+              <li><span data-lang="en">If SmartScreen shows "Windows protected your PC", click <strong>More info → Run anyway</strong>. The installer isn't code-signed yet.</span><span data-lang="es">Si SmartScreen muestra "Windows protegió su PC", pulsa <strong>Más información → Ejecutar de todas formas</strong>. El instalador aún no está firmado.</span></li>
+              <li><span data-lang="en">Lumina Sound installs for your user only — no administrator password needed.</span><span data-lang="es">Lumina Sound se instala solo para tu usuario: no hace falta contraseña de administrador.</span></li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="product-actions premium">
+          <a class="btn btn-outlined" href="https://kronostech.lemonsqueezy.com/checkout/buy/9f69d6a1-1f38-4188-a94d-49a0b48d95c1" target="_blank" rel="noopener">
+            <span class="material-symbols-rounded" aria-hidden="true">workspace_premium</span>
+            <span data-lang="en">Buy Premium (desktop)</span><span data-lang="es">Comprar Premium (escritorio)</span>
+          </a>
+          <a class="btn btn-outlined" href="https://github.com/Kronos1993/lumina-sound-releases/releases" target="_blank" rel="noopener">
+            <span class="material-symbols-rounded" aria-hidden="true">history</span>
+            <span data-lang="en">All versions</span><span data-lang="es">Todas las versiones</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span data-year>2026</span> Kronos Tech</span>
+      <nav aria-label="Footer">
+        <a href="../#lumina-sound">Lumina Sound</a>
+        <a href="/lumina-sound-privacy/"><span data-lang="en">Lumina Sound privacy policy</span><span data-lang="es">Privacidad de Lumina Sound</span></a>
+        <a href="mailto:kronostech.dev@gmail.com"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../assets/site.js?v=4"></script>
+</body>
+</html>
