@@ -203,11 +203,6 @@ section.block { padding: 88px 0; border-top: 1px solid var(--outline-variant); }
 .product-actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
 .btn-lumina { background: linear-gradient(100deg, var(--lumina-violet), var(--lumina-cyan)); color: #fff; }
 .btn-lumina:hover { box-shadow: 0 6px 24px rgb(139 92 246 / .35); }
-.product-video { grid-column: 1 / -1; margin: 0; }
-.product-video figcaption { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; font-weight: 500; color: var(--on-surface-variant); }
-.product-video figcaption .material-symbols-rounded { color: #b79bff; }
-.video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-m); overflow: hidden; border: 1px solid var(--outline); background: var(--surface-highest); box-shadow: var(--elev-3); }
-.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 /* Phone mock */
 .phone {
