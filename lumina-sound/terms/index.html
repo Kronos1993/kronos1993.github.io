@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Lumina Sound</title>
+    <meta name="title-en" content="Terms of Service — Lumina Sound">
+    <meta name="title-es" content="Términos del Servicio — Lumina Sound">
+    <meta name="description" content="Terms of Service for Lumina Sound, the music and podcast player by Kronos Tech.">
+    <meta name="theme-color" content="#0a1018">
+    <link rel="icon" href="../../assets/lumina-sound-icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        :root {
+          color-scheme: dark;
+          --bg: #0a1018;
+          --card: #101923;
+          --card-high: #16212d;
+          --line: #1d2a38;
+          --outline: #2a3949;
+          --ink: #e2e7ef;
+          --body: #c9d1dc;
+          --muted: #a1acbb;
+          --accent: #a78bfa;
+          --accent-2: #22d3ee;
+          --accent-container: #2e1f5e;
+          --on-accent-container: #e4dbff;
+        }
+        * { box-sizing: border-box; }
+        body {
+          margin: 0;
+          background: var(--bg);
+          color: var(--ink);
+          font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+          line-height: 1.6;
+          -webkit-font-smoothing: antialiased;
+          overflow-x: hidden;
+        }
+        html[lang="en"] [data-lang="es"], html[lang="es"] [data-lang="en"] { display: none !important; }
+        .topbar {
+          position: sticky; top: 0; z-index: 10;
+          background: rgb(10 16 24 / .8);
+          backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+          border-bottom: 1px solid var(--line);
+        }
+        .topbar .inner { max-width: 760px; margin: 0 auto; padding: 0 16px; height: 64px; display: flex; align-items: center; gap: 12px; }
+        .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 600; font-size: 17px; text-decoration: none; }
+        .brand img { width: 32px; height: 32px; border-radius: 9px; }
+        .segmented { margin-left: auto; display: inline-flex; border: 1px solid var(--outline); border-radius: 999px; overflow: hidden; }
+        .segmented button {
+          font: inherit; font-size: 13px; font-weight: 600; padding: 6px 14px; cursor: pointer;
+          background: transparent; color: var(--muted); border: 0;
+        }
+        .segmented button + button { border-left: 1px solid var(--outline); }
+        .segmented button[aria-pressed="true"] { background: var(--accent-container); color: var(--on-accent-container); }
+        .wrap { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+        header { position: relative; padding-bottom: 28px; margin-bottom: 32px; border-bottom: 1px solid var(--line); }
+        header h1 {
+          font-size: clamp(32px, 6vw, 44px);
+          font-weight: 700;
+          margin: 0 0 12px;
+          letter-spacing: -0.02em;
+          line-height: 1.15;
+          background: linear-gradient(100deg, var(--accent), var(--accent-2));
+          -webkit-background-clip: text; background-clip: text; color: transparent;
+        }
+        header p { margin: 0; color: var(--muted); font-size: 16px; }
+        header strong { color: var(--ink); }
+        .meta {
+          display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .1em;
+          color: var(--on-accent-container); background: var(--accent-container);
+          border-radius: 999px; padding: 6px 14px; margin-top: 16px;
+        }
+        section {
+          background: var(--card);
+          border: 1px solid var(--line);
+          border-radius: 24px;
+          padding: 24px;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 640px) { section { padding: 28px 32px; } }
+        h2 { font-size: 19px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 12px; color: var(--ink); }
+        p { margin: 0 0 12px; color: var(--body); }
+        p:last-child { margin-bottom: 0; }
+        strong { color: var(--ink); font-weight: 600; }
+        ul { margin: 0 0 12px; padding-left: 20px; color: var(--body); }
+        li { margin-bottom: 8px; }
+        li::marker { color: var(--accent); }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-box {
+          background: var(--card-high); border: 1px solid var(--outline); border-radius: 16px;
+          padding: 16px 20px; font-size: 15px; color: var(--body); overflow-wrap: anywhere;
+        }
+        .highlight {
+          background: var(--accent-container); border: 1px solid var(--outline); border-radius: 16px;
+          padding: 16px 20px; font-size: 15px; color: var(--on-accent-container);
+        }
+        .highlight strong { color: var(--on-accent-container); }
+        footer { text-align: center; margin-top: 40px; color: var(--muted); font-size: 12px; font-weight: 500; letter-spacing: .08em; }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+<div class="topbar">
+    <div class="inner">
+        <a class="brand" href="../">
+            <img src="../../assets/lumina-sound-icon.png" alt="" width="32" height="32">
+            Lumina Sound
+        </a>
+        <div class="segmented" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============================ ENGLISH ============================ -->
+<div class="wrap" data-lang="en">
+    <header>
+        <h1>Terms of Service</h1>
+        <p>These Terms apply to <strong>Lumina Sound</strong>, the music and podcast player published by <strong>Kronos Tech</strong> for Android, iOS, macOS and Windows.</p>
+        <span class="meta">EFFECTIVE DATE · NOVEMBER 5, 2026</span>
+    </header>
+
+    <section>
+        <h2>1. Agreement</h2>
+        <p>By downloading, installing or using Lumina Sound (the "App"), you agree to these Terms. If you do not agree, do not use the App. If you obtained the App from an app store, that store's terms (for example, the Google Play Terms of Service, the Apple Media Services Terms or the Microsoft Store terms) also apply; if they conflict with these Terms, the store's terms prevail for matters they govern.</p>
+    </section>
+
+    <section>
+        <h2>2. License to Use the App</h2>
+        <p>Kronos Tech grants you a personal, non-exclusive, non-transferable, revocable license to use the App on devices you own or control, for your personal, non-commercial use, in accordance with these Terms.</p>
+        <p>You may not:</p>
+        <ul>
+            <li>copy, modify, resell, rent or redistribute the App, except as permitted by law;</li>
+            <li>decompile, reverse engineer or disassemble the App, except to the extent applicable law expressly allows it;</li>
+            <li>bypass, disable or interfere with licensing, purchase verification or other protections in the App;</li>
+            <li>use the App in any unlawful way.</li>
+        </ul>
+        <p>The App, its design, code and branding are owned by Kronos Tech and are protected by intellectual property laws. These Terms do not transfer any ownership to you.</p>
+    </section>
+
+    <section>
+        <h2>3. Your Content</h2>
+        <div class="highlight">
+            <strong>Lumina Sound plays content you already have.</strong> It does not sell, stream or provide music.
+        </div>
+        <p style="margin-top:12px">The audio files, folders, playlists, streams, podcast feeds and home-server libraries you play with the App are your content or third-party content you choose to access. You are solely responsible for having the necessary rights to them. Your content stays on your device or on the servers you choose; Kronos Tech does not receive or claim any rights over it.</p>
+        <p>Features that change files, such as the tag editor, modify your files directly. Keep backups of content that is important to you.</p>
+    </section>
+
+    <section>
+        <h2>4. Premium Purchases</h2>
+        <ul>
+            <li><strong>One-time purchase:</strong> Premium is a one-time purchase that unlocks additional features and removes ads. It is not a subscription and is not renewed automatically.</li>
+            <li><strong>"Lifetime" access:</strong> means for as long as Kronos Tech offers and supports the App on the platform where you bought it. It is tied to the store account (Google Play, Apple App Store or Microsoft Store) or the desktop license key used for the purchase, and does not carry over between different stores.</li>
+            <li><strong>Payment processing:</strong> mobile purchases are processed by Google Play or the Apple App Store; desktop license keys are sold by <a href="https://www.lemonsqueezy.com/" target="_blank" rel="noopener">Lemon Squeezy</a> as merchant of record. Prices are shown before you buy and may include taxes as determined by the seller.</li>
+            <li><strong>Desktop license keys:</strong> are for your personal use, may be limited to a number of activations, and must not be shared or published.</li>
+            <li><strong>Refunds:</strong> are handled by the store or seller you bought from, under their refund policies. If you have a problem with a purchase, contact us and we will help where we can.</li>
+            <li><strong>Restoring purchases:</strong> on mobile, use "Restore purchases" with the same store account; on desktop, re-enter your license key.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Free Version and Ads</h2>
+        <p>The free version of the App on Android and iOS displays ads served by Google AdMob, according to the consent choices you make in the App. Some features are available only with Premium. Desktop versions do not display ads.</p>
+    </section>
+
+    <section>
+        <h2>6. Third-Party Services and Content</h2>
+        <p>Some features rely on third-party services, such as LRCLIB for lyrics, Apple's podcast directory and each podcast's host for podcasts, the AutoEq project for headphone profiles, and Last.fm or ListenBrainz for scrobbling. These services are provided by their owners under their own terms, may change or stop working at any time, and are not controlled by Kronos Tech. Podcasts, lyrics and other third-party content belong to their respective owners.</p>
+    </section>
+
+    <section>
+        <h2>7. Updates and Availability</h2>
+        <p>We may update the App to add, change or remove features, fix problems or comply with the law or store requirements. We aim to keep the App working, but we do not guarantee that every feature will be available at all times or on every device or operating-system version.</p>
+    </section>
+
+    <section>
+        <h2>8. Disclaimer</h2>
+        <p>The App is provided "as is" and "as available". To the maximum extent permitted by law, Kronos Tech makes no warranties, express or implied, including warranties of merchantability, fitness for a particular purpose and non-infringement, and does not warrant that the App will be uninterrupted or error-free.</p>
+        <p>Use sensible volume levels. Equalizer, gain and similar features can increase loudness; protect your hearing and your equipment.</p>
+    </section>
+
+    <section>
+        <h2>9. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, Kronos Tech is not liable for any indirect, incidental, special or consequential damages, or for loss of data, files or profits, arising from your use of or inability to use the App. Our total liability for any claim related to the App is limited to the amount you paid for it.</p>
+    </section>
+
+    <section>
+        <h2>10. Your Consumer Rights</h2>
+        <p>Nothing in these Terms limits any rights you have under consumer protection laws that cannot be waived by contract, including those of your country of residence.</p>
+    </section>
+
+    <section>
+        <h2>11. Termination</h2>
+        <p>You may stop using the App at any time by uninstalling it. If you materially breach these Terms, your license to use the App ends automatically. Sections 3, 8, 9 and 10 continue to apply after termination.</p>
+    </section>
+
+    <section>
+        <h2>12. Privacy</h2>
+        <p>How the App handles information is described in the <a href="/lumina-sound-privacy/">Lumina Sound Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+        <h2>13. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. Changes take effect when published on this page, and the effective date at the top will be updated. If you keep using the App after a change, you accept the updated Terms.</p>
+    </section>
+
+    <section>
+        <h2>14. Contact Us</h2>
+        <p>For questions about these Terms or a purchase:</p>
+        <div class="contact-box">
+            <strong>Kronos Tech</strong><br>
+            Email: <a href="mailto:kronostech.dev@gmail.com">kronostech.dev@gmail.com</a><br>
+            Website: <a href="https://kronos1993.github.io/">kronos1993.github.io</a>
+        </div>
+    </section>
+
+    <footer>
+        LUMINA SOUND · TERMS OF SERVICE
+    </footer>
+</div>
+
+<!-- ============================ ESPAÑOL ============================ -->
+<div class="wrap" data-lang="es">
+    <header>
+        <h1>Términos del Servicio</h1>
+        <p>Estos Términos se aplican a <strong>Lumina Sound</strong>, el reproductor de música y podcasts publicado por <strong>Kronos Tech</strong> para Android, iOS, macOS y Windows.</p>
+        <span class="meta">FECHA DE ENTRADA EN VIGOR · 5 DE NOVIEMBRE DE 2026</span>
+    </header>
+
+    <section>
+        <h2>1. Aceptación</h2>
+        <p>Al descargar, instalar o usar Lumina Sound (la "App"), aceptas estos Términos. Si no estás de acuerdo, no uses la App. Si obtuviste la App en una tienda de aplicaciones, también se aplican los términos de esa tienda (por ejemplo, los Términos del Servicio de Google Play, los Términos de los Servicios Multimedia de Apple o los términos de Microsoft Store); si entran en conflicto con estos Términos, prevalecen los de la tienda en las materias que regulan.</p>
+    </section>
+
+    <section>
+        <h2>2. Licencia de uso de la App</h2>
+        <p>Kronos Tech te concede una licencia personal, no exclusiva, intransferible y revocable para usar la App en dispositivos de tu propiedad o bajo tu control, para uso personal y no comercial, de acuerdo con estos Términos.</p>
+        <p>No puedes:</p>
+        <ul>
+            <li>copiar, modificar, revender, alquilar ni redistribuir la App, salvo en lo que permita la ley;</li>
+            <li>descompilar, aplicar ingeniería inversa ni desensamblar la App, salvo en la medida en que la ley aplicable lo permita expresamente;</li>
+            <li>eludir, desactivar o interferir con las licencias, la verificación de compras u otras protecciones de la App;</li>
+            <li>usar la App de cualquier forma ilícita.</li>
+        </ul>
+        <p>La App, su diseño, su código y su marca pertenecen a Kronos Tech y están protegidos por las leyes de propiedad intelectual. Estos Términos no te transfieren ninguna titularidad.</p>
+    </section>
+
+    <section>
+        <h2>3. Tu contenido</h2>
+        <div class="highlight">
+            <strong>Lumina Sound reproduce el contenido que ya tienes.</strong> No vende, transmite ni proporciona música.
+        </div>
+        <p style="margin-top:12px">Los archivos de audio, carpetas, listas, streams, feeds de podcasts y bibliotecas de servidores domésticos que reproduces con la App son contenido tuyo o contenido de terceros al que decides acceder. Eres el único responsable de contar con los derechos necesarios sobre ellos. Tu contenido permanece en tu dispositivo o en los servidores que elijas; Kronos Tech no lo recibe ni reclama ningún derecho sobre él.</p>
+        <p>Las funciones que modifican archivos, como el editor de etiquetas, cambian tus archivos directamente. Guarda copias de seguridad del contenido que te importe.</p>
+    </section>
+
+    <section>
+        <h2>4. Compras Premium</h2>
+        <ul>
+            <li><strong>Pago único:</strong> Premium es una compra única que desbloquea funciones adicionales y elimina los anuncios. No es una suscripción y no se renueva automáticamente.</li>
+            <li><strong>Acceso "de por vida":</strong> significa mientras Kronos Tech ofrezca y dé soporte a la App en la plataforma donde la compraste. Está vinculado a la cuenta de la tienda (Google Play, Apple App Store o Microsoft Store) o a la clave de licencia de escritorio usada en la compra, y no se traslada entre tiendas distintas.</li>
+            <li><strong>Procesamiento de pagos:</strong> las compras en móvil las procesan Google Play o Apple App Store; las claves de licencia de escritorio las vende <a href="https://www.lemonsqueezy.com/" target="_blank" rel="noopener">Lemon Squeezy</a> como comerciante registrado (merchant of record). Los precios se muestran antes de comprar y pueden incluir impuestos según determine el vendedor.</li>
+            <li><strong>Claves de licencia de escritorio:</strong> son para tu uso personal, pueden estar limitadas a un número de activaciones y no deben compartirse ni publicarse.</li>
+            <li><strong>Reembolsos:</strong> los gestiona la tienda o el vendedor donde compraste, según sus políticas de reembolso. Si tienes un problema con una compra, contáctanos y te ayudaremos en lo que podamos.</li>
+            <li><strong>Restaurar compras:</strong> en móvil, usa "Restaurar compras" con la misma cuenta de la tienda; en escritorio, vuelve a introducir tu clave de licencia.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Versión gratuita y anuncios</h2>
+        <p>La versión gratuita de la App en Android e iOS muestra anuncios servidos por Google AdMob, según las opciones de consentimiento que elijas en la App. Algunas funciones solo están disponibles con Premium. Las versiones de escritorio no muestran anuncios.</p>
+    </section>
+
+    <section>
+        <h2>6. Servicios y contenido de terceros</h2>
+        <p>Algunas funciones dependen de servicios de terceros, como LRCLIB para las letras, el directorio de podcasts de Apple y el servidor de cada podcast para los podcasts, el proyecto AutoEq para los perfiles de auriculares, y Last.fm o ListenBrainz para el scrobbling. Estos servicios los prestan sus propietarios bajo sus propios términos, pueden cambiar o dejar de funcionar en cualquier momento y no están bajo el control de Kronos Tech. Los podcasts, las letras y demás contenido de terceros pertenecen a sus respectivos titulares.</p>
+    </section>
+
+    <section>
+        <h2>7. Actualizaciones y disponibilidad</h2>
+        <p>Podemos actualizar la App para añadir, cambiar o retirar funciones, corregir problemas o cumplir con la ley o los requisitos de las tiendas. Procuramos que la App siga funcionando, pero no garantizamos que todas las funciones estén disponibles en todo momento ni en todos los dispositivos o versiones del sistema operativo.</p>
+    </section>
+
+    <section>
+        <h2>8. Exención de garantías</h2>
+        <p>La App se proporciona "tal cual" y "según disponibilidad". En la máxima medida permitida por la ley, Kronos Tech no ofrece garantías, expresas ni implícitas, incluidas las de comerciabilidad, idoneidad para un fin concreto y no infracción, ni garantiza que la App funcione sin interrupciones ni errores.</p>
+        <p>Usa niveles de volumen razonables. El ecualizador, la ganancia y funciones similares pueden aumentar el volumen; protege tu audición y tus equipos.</p>
+    </section>
+
+    <section>
+        <h2>9. Limitación de responsabilidad</h2>
+        <p>En la máxima medida permitida por la ley, Kronos Tech no será responsable de daños indirectos, incidentales, especiales o consecuentes, ni de la pérdida de datos, archivos o beneficios, derivados del uso o la imposibilidad de usar la App. Nuestra responsabilidad total por cualquier reclamación relacionada con la App se limita al importe que pagaste por ella.</p>
+    </section>
+
+    <section>
+        <h2>10. Tus derechos como consumidor</h2>
+        <p>Nada de lo dispuesto en estos Términos limita los derechos que te otorguen las leyes de protección al consumidor que no puedan excluirse por contrato, incluidas las de tu país de residencia.</p>
+    </section>
+
+    <section>
+        <h2>11. Terminación</h2>
+        <p>Puedes dejar de usar la App en cualquier momento desinstalándola. Si incumples gravemente estos Términos, tu licencia de uso termina automáticamente. Las secciones 3, 8, 9 y 10 siguen aplicándose después de la terminación.</p>
+    </section>
+
+    <section>
+        <h2>12. Privacidad</h2>
+        <p>La forma en que la App trata la información se describe en la <a href="/lumina-sound-privacy/">Política de Privacidad de Lumina Sound</a>.</p>
+    </section>
+
+    <section>
+        <h2>13. Cambios en estos Términos</h2>
+        <p>Podemos actualizar estos Términos ocasionalmente. Los cambios entran en vigor al publicarse en esta página, y se actualizará la fecha de entrada en vigor indicada arriba. Si sigues usando la App después de un cambio, aceptas los Términos actualizados.</p>
+    </section>
+
+    <section>
+        <h2>14. Contacto</h2>
+        <p>Para preguntas sobre estos Términos o sobre una compra:</p>
+        <div class="contact-box">
+            <strong>Kronos Tech</strong><br>
+            Correo: <a href="mailto:kronostech.dev@gmail.com">kronostech.dev@gmail.com</a><br>
+            Sitio web: <a href="https://kronos1993.github.io/">kronos1993.github.io</a>
+        </div>
+    </section>
+
+    <footer>
+        LUMINA SOUND · TÉRMINOS DEL SERVICIO
+    </footer>
+</div>
+
+<script src="../../assets/site.js?v=4"></script>
+</body>
+</html>
