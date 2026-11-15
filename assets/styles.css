@@ -302,7 +302,7 @@ tr:last-child td { border-bottom: 0; }
 /* Language visibility */
 html[lang="en"] [data-lang="es"], html[lang="es"] [data-lang="en"] { display: none !important; }
 
-/* Pokédex product */
+/* Dexpedia product */
 .product + .product { margin-top: 24px; }
 .product-dex::before {
   background: radial-gradient(closest-side, rgb(255 28 72 / .16), transparent),
