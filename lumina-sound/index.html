@@ -33,6 +33,16 @@
     .download code { font-size: 13px; background: var(--surface-highest); padding: 2px 6px; border-radius: 6px; overflow-wrap: anywhere; }
     .download .note { margin-top: 16px; font-size: 14px; color: var(--on-surface-variant); }
     .premium { margin-top: 24px; }
+    .premium-card { margin-top: 32px; background: var(--surface); border: 1px solid var(--outline-variant); border-radius: var(--radius-l); padding: 32px; }
+    .premium-card h3 { display: flex; align-items: center; gap: 12px; font-size: 24px; }
+    .premium-card h3 .material-symbols-rounded { font-size: 28px; color: var(--primary); }
+    .premium-card .price { margin-top: 8px; font-size: 20px; font-weight: 600; }
+    .premium-card .price small { font-size: 15px; font-weight: 400; color: var(--on-surface-variant); }
+    .premium-card .benefits { display: grid; gap: 16px; margin-top: 24px; }
+    @media (min-width: 860px) { .premium-card .benefits { grid-template-columns: repeat(3, 1fr); } }
+    .premium-card .benefits h4 { font-size: 15px; color: var(--primary); }
+    .premium-card .benefits ul { margin: 6px 0 0; padding-left: 20px; color: var(--on-surface-variant); }
+    .premium-card .note { margin-top: 20px; font-size: 14px; color: var(--on-surface-variant); }
   </style>
 </head>
 <body>
@@ -109,10 +119,67 @@
           </article>
         </div>
 
+        <article class="premium-card" id="premium">
+          <h3><span class="material-symbols-rounded" aria-hidden="true">workspace_premium</span>Premium</h3>
+          <p class="price">US$9.99 <small><span data-lang="en">one-time payment · lifetime license for the desktop app (macOS and Windows) · no subscription</span><span data-lang="es">pago único · licencia de por vida para la app de escritorio (macOS y Windows) · sin suscripción</span></small></p>
+          <div class="benefits">
+            <div>
+              <h4><span data-lang="en">Sound</span><span data-lang="es">Sonido</span></h4>
+              <ul>
+                <li><span data-lang="en">Equalizer &amp; AutoEQ</span><span data-lang="es">Ecualizador y AutoEQ</span></li>
+                <li><span data-lang="en">Volume normalization</span><span data-lang="es">Normalización de volumen</span></li>
+                <li><span data-lang="en">Crossfade</span><span data-lang="es">Fundido entre canciones</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4><span data-lang="en">Lyrics</span><span data-lang="es">Letras</span></h4>
+              <ul>
+                <li><span data-lang="en">Synced lyrics</span><span data-lang="es">Letras sincronizadas</span></li>
+                <li><span data-lang="en">Karaoke mode</span><span data-lang="es">Modo karaoke</span></li>
+                <li><span data-lang="en">Lyrics in media controls</span><span data-lang="es">Letras en los controles multimedia</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4><span data-lang="en">Library</span><span data-lang="es">Biblioteca</span></h4>
+              <ul>
+                <li><span data-lang="en">Unlimited playlists</span><span data-lang="es">Listas ilimitadas</span></li>
+                <li><span data-lang="en">Smart mixes</span><span data-lang="es">Mixes inteligentes</span></li>
+                <li><span data-lang="en">Tag editor</span><span data-lang="es">Editor de etiquetas</span></li>
+                <li><span data-lang="en">Song radio</span><span data-lang="es">Radio de canción</span></li>
+                <li><span data-lang="en">Play from your server</span><span data-lang="es">Reproduce desde tu servidor</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Podcasts</h4>
+              <ul>
+                <li><span data-lang="en">Podcast downloads</span><span data-lang="es">Descargas de podcasts</span></li>
+                <li><span data-lang="en">Skip silence</span><span data-lang="es">Saltar silencios</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4><span data-lang="en">Look &amp; feel</span><span data-lang="es">Apariencia</span></h4>
+              <ul>
+                <li><span data-lang="en">Color themes</span><span data-lang="es">Temas de color</span></li>
+                <li><span data-lang="en">Visualizer styles</span><span data-lang="es">Estilos de visualizador</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4><span data-lang="en">And more</span><span data-lang="es">Y además</span></h4>
+              <ul>
+                <li><span data-lang="en">Your Wrapped</span><span data-lang="es">Tu Wrapped</span></li>
+              </ul>
+            </div>
+          </div>
+          <p class="note">
+            <span data-lang="en">After paying you receive a license key on screen and by email; paste it into the app under Premium. Full refund within 14 days of purchase, no questions asked — see the <a href="terms/">Terms of Service</a>. Published by Kronos Tech. On Android and iOS, Premium is bought in the app through Google Play or the App Store.</span>
+            <span data-lang="es">Al pagar recibes una clave de licencia en pantalla y por correo; pégala en la app, en Premium. Reembolso completo dentro de los 14 días posteriores a la compra, sin preguntas: consulta los <a href="terms/">Términos del Servicio</a>. Publicado por Kronos Tech. En Android e iOS, Premium se compra dentro de la app a través de Google Play o App Store.</span>
+          </p>
+        </article>
+
         <div class="product-actions premium">
           <a class="btn btn-outlined" href="https://kronostech.lemonsqueezy.com/checkout/buy/9f69d6a1-1f38-4188-a94d-49a0b48d95c1" target="_blank" rel="noopener">
             <span class="material-symbols-rounded" aria-hidden="true">workspace_premium</span>
-            <span data-lang="en">Buy Premium (desktop)</span><span data-lang="es">Comprar Premium (escritorio)</span>
+            <span data-lang="en">Buy Premium (desktop) · US$9.99</span><span data-lang="es">Comprar Premium (escritorio) · US$9,99</span>
           </a>
           <a class="btn btn-outlined" href="https://github.com/Kronos1993/lumina-sound-releases/releases" target="_blank" rel="noopener">
             <span class="material-symbols-rounded" aria-hidden="true">history</span>
